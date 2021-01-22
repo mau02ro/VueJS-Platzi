@@ -46,3 +46,13 @@ En este caso, el proxy puede cumplir algunas de las siguientes funciones:
 <img src="./assets/proxy.webp"/>
 
 Imagínate a un proxy como un INTERMEDIARIO, en el ámbito de redes, tú puedes conectarte desde tu computadora a un servidor intermedio, y ese servidor intermedio puede conectarse a cualquier sitio web al que quieras entrar. De este modo, quien se conecta al sitio web es ese servidor intermedio y este mismo es quien te manda a ti la información de dicho sitio web, de esa manera tienes una conexión un poco más segura, y en este caso ese servidor intermedio es un proxy.
+
+## Reactividad con effect, track y trigger
+
+- **Effect**: Es todo aquello que efectúa un cambio en la aplicación.
+
+- **Track**: Siguen las dependencias dinámicas y sus efectos. Es decir, se mantiene es el acto de dar seguimiento a aquellas variables que producen el efecto, para que si una cambia, el efecto se vuelva a calcular.
+
+- **Trigger**: Son los disparadores de los efectos de las dependencias. Es esa acción que se ejecuta después de que el track detectó un cambio para poder actualizar el effect.
+
+<img src="./assets/reactividad.webp"/>
