@@ -10,6 +10,14 @@
       <span p-text="message"></span>
       <br />
       <input type="text" p-model="message" />
+      <br />
+      <input type="text" p-model="image" />
+      <br />
+      <img p-bind="src:image" />
+      <br />
+      <input type="text" p-model="google" />
+      <br />
+      <a p-bind="href:google">Google</a>
     </div>
 
     <script src="./platzi.js"></script>
@@ -20,6 +28,8 @@
         data() {
           return {
             message: "Hola Vue",
+            image: "https://via.placeholder.com/300/191798",
+            google: "https://google.com",
           };
         },
       });
